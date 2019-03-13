@@ -1,8 +1,14 @@
 var express = require('express');
 var register = express.Router();
+var config = require('../config');
+
+/* GET register page. */
+register.get('/', function (req, res, next) {
+    res.render('register', {config});
+});
 
 /* POST register form. */
-register.get('/', function (req, res, next) {
+register.post('/', function (req, res, next) {
     var db = require('../config/db');
 
     db.end(function (err) {
