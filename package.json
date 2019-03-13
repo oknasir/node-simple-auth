@@ -1,0 +1,18 @@
+{
+    "name": "hq-simple-auth",
+    "version": "0.0.1",
+    "description": "A simple authentication application with metronic theme's auth and dashboard pages.",
+    "repository": "https://github.com/oknasir/hq-simple-auth.git",
+    "author": "Nasir Mehmood",
+    "private": false,
+    "license": "MIT",
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "ejs": "~2.5.7",
+        "express": "~4.16.0",
+        "http-errors": "~1.6.2",
+        "mysql": "^2.16.0"
+    }
+}
