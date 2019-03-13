@@ -4,6 +4,7 @@ var config = require('./index');
 var con = mysql.createConnection({
     host: config.db.host,
     user: config.db.user,
+    database: config.db.name,
     password: config.db.pass
 });
 

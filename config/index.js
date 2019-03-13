@@ -1,10 +1,10 @@
 module.exports = {
     app: {
-        name: 'HQ Analytics Simple Authentication',
-        key: 'base64:5CxTC/pIeo8y6bdfo1hIKZnPsMHOQpCvv+ue3GbXgXM='
+        name: 'HQ Analytics Simple Authentication'
     },
     db: {
         host: 'localhost',
+        name: 'homestead',
         user: 'root',
         pass: ''
     }

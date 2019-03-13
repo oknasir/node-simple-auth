@@ -4,9 +4,19 @@
     <div class="row h-100 justify-content-center align-items-center">
 
         <div class="col-md-4">
+
+            <% if(message_suc){ %>
+                <div class="alert alert-primary text-center" role="alert"><%= message_suc %></div>
+            <% } %>
+
+            <% if(message_err){ %>
+                <div class="alert alert-danger text-center" role="alert"><%= message_err %></div>
+            <% } %>
+
             <div class="card">
                 <div class="card-header">Login</div>
                 <div class="card-body">
+
                     <form method="post" action="/login" id="validate-form">
 
                         <div class="form-group row"><label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
