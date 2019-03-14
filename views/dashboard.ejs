@@ -1,0 +1,27 @@
+<%- include('layouts/header', {title:'Dashboard Page'}) %>
+
+<div class="container-x-y">
+    <div class="row h-100 justify-content-center align-items-center">
+
+        <div class="col-md-6">
+
+            <% if(message_suc){ %>
+                <div class="alert alert-primary text-center" role="alert"><%= message_suc %></div>
+            <% } %>
+
+            <% if(message_err){ %>
+                <div class="alert alert-danger text-center" role="alert"><%= message_err %></div>
+            <% } %>
+
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+                <div class="card-body">
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%- include layouts/footer.ejs %>

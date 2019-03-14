@@ -1,7 +1,7 @@
 {
-    "name": "hq-simple-auth",
+    "name": "node-simple-auth",
     "version": "0.0.1",
-    "description": "A simple authentication application with metronic theme's auth and dashboard pages.",
+    "description": "An express js base simple authentication application with bootstrap tool kit.",
     "repository": "https://github.com/oknasir/hq-simple-auth.git",
     "author": "Nasir Mehmood",
     "private": false,
@@ -12,6 +12,7 @@
     "dependencies": {
         "bcrypt": "^3.0.4",
         "cookie-parser": "^1.4.4",
+        "debug": "^4.1.1",
         "ejs": "~2.5.7",
         "express": "~4.16.0",
         "http-errors": "~1.6.2",
